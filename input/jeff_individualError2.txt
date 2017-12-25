@@ -1,0 +1,118 @@
+package gametestclass;
+
+/*
+Jeff Rowell
+Multiple lines on same line
+This is a test file with multiple lines of code on the same line errors.
+Multiple lines of code on the same line errors: line 27 and line 40
+*/
+
+import java.util.Objects;
+
+public class GameTestClass 
+{
+
+   private final int anything = 0;
+   private final String GAME_ID;
+   private final String HOME_TEAM_ID; 
+   private final String GUEST_TEAM_ID; 
+   private final String GAME_DATE;
+   private final String HOME_TEAM_SCORE;
+   private final String GUEST_TEAM_SCORE;
+
+   public GameTestClass(String GAME_ID, String HOME_TEAM_ID, 
+               String GUEST_TEAM_ID, String GAME_DATE, String HOME_TEAM_SCORE, 
+               String GUEST_TEAM_SCORE) 
+
+   {
+      this.GAME_ID = GAME_ID; this.HOME_TEAM_ID = HOME_TEAM_ID;
+      this.GUEST_TEAM_ID = GUEST_TEAM_ID;
+      this.GAME_DATE = GAME_DATE;
+      this.HOME_TEAM_SCORE = HOME_TEAM_SCORE;
+      this.GUEST_TEAM_SCORE = GUEST_TEAM_SCORE;
+      for (int i = 0; i < 10; i++)
+      {
+         System.out.println(i);
+      }
+   }
+
+   public String GetGameId() 
+   {  
+      int num = 90; return GAME_ID;
+   } 
+
+   public String getHomeTeamId() 
+   { 
+      return HOME_TEAM_ID;
+   }
+
+   public String getGuestTeamId()
+   {     
+      return GUEST_TEAM_ID;
+   }
+
+   public String getGameDate()
+   {  
+      return GAME_DATE;
+   }
+
+   public String getHomeTeamScore()
+   {
+      return HOME_TEAM_SCORE;
+   }
+
+   public String getGuestTeamScore() 
+   {        
+      return GUEST_TEAM_SCORE;  
+   }
+
+   @Override
+   public String toString()
+   {
+      return "Game" + "GAME_ID = " + GAME_ID + ", HOME_TEAM_ID = "
+            + HOME_TEAM_ID + ", GUEST_TEAM_ID = " + GUEST_TEAM_ID
+            + ", GAME_DATE = " + GAME_DATE + ", HOME_TEAM_SCORE = "
+            + HOME_TEAM_SCORE + ", GUEST_TEAM_SCORE = " + GUEST_TEAM_SCORE;
+   }
+
+   @Override
+   public boolean equals(Object obj)
+   {
+      if (obj == null)
+      {
+         return false;
+      }
+      if (getClass() != obj.getClass())
+      {
+         return false;
+      }
+
+      final GameTestClass other = (GameTestClass) obj;
+
+      if (!Objects.equals(this.GAME_ID, other.GAME_ID)) 
+      {
+         return false; 
+      }
+      if (!Objects.equals(this.HOME_TEAM_ID, other.HOME_TEAM_ID))
+      {
+         return false;
+      }
+      if (!Objects.equals(this.GUEST_TEAM_ID, other.GUEST_TEAM_ID))
+      {
+         return false;
+      }
+      if (!Objects.equals(this.GAME_DATE, other.GAME_DATE))
+      {
+         return false;
+      }
+      if (!Objects.equals(this.HOME_TEAM_SCORE, other.HOME_TEAM_SCORE))
+      {
+         return false;
+      }
+      if (!Objects.equals(this.GUEST_TEAM_SCORE, other.GUEST_TEAM_SCORE))
+      {
+         return false;
+      }
+      return true;
+   }
+}

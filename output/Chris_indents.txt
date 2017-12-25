@@ -1,0 +1,16 @@
+Style report by: ThienNgo N. Le
+Report date: Friday October 20, 2017
+Test program author: Chris Spaulding
+Error(s) checked: Indentations
+
+Style errors found:
+--------------------------------------------------------------------------------
+
+BLANK LINE ERROR: Missing a blank line above line number 10
+INDENTATION ERROR: Line number 10 has indentation error.
+INDENTATION ERROR: Line number 11 has indentation error.
+INDENTATION ERROR: Line number 12 has indentation error.
+INDENTATION ERROR: Line number 13 has indentation error.
+INDENTATION ERROR: Line number 14 has indentation error.
+INDENTATION ERROR: Line number 15 has indentation error.
+INDENTATION ERROR: Line number 16 has indentation error.

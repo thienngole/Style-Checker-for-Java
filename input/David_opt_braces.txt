@@ -1,0 +1,17 @@
+/*
+David Aguiar
+Optional Braces
+Errors should be on lines 12-13 and 14-15
+*/
+
+public class sillyProgram
+{
+   public static void main(String[] args) 
+   {
+	   int x = 4;
+	   if(x == x)
+	      System.out.println("of course its the same");
+	   for(int z = 0; z < 10; z++)
+	      System.out.println(z);
+   }
+}

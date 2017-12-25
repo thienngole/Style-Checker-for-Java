@@ -1,0 +1,40 @@
+/*
+Andrew Hodder
+Brace alignment
+This program has brace alignment issues on lines:
+11, 12, 23, 27, 32, 33, 35
+
+*/
+
+package samples;
+
+public class Andrew_brace_alignment {
+  public static void main(String[] args) {
+    boolean isTurkey = false;
+
+    int sandwichesToEat = isTurkey ? 1 : 3;
+
+    System.out.println("sandwiches to eat: " + sandwichesToEat);
+
+    new Animal(4, false).speak();
+    new Animal(6, true).speak();
+  }
+
+  private static class Animal {
+    private int legs;
+    private boolean canFly;
+
+    public Animal(int legs, boolean canFly) {
+      this.legs = legs;
+      this.canFly = canFly;
+    }
+
+    public void speak() {
+      if (canFly) {
+        System.out.println("I can fly!");
+      } else {
+        System.out.println("I can't fly, but I have " + legs + " legs!");
+      }
+    }
+  }
+}

@@ -1,0 +1,59 @@
+/*
+Mark Huntington
+Case and operators
+Lines 20, 51, and 53 do not follow proper case standard.
+Line 50 does not follow space operator standards
+
+*/
+import java.util.*;
+
+
+public class TriangleArea
+{
+   static Scanner console = new Scanner(System.in);
+   
+   
+   public static void main (String [] args) throws Exception
+   {
+   int side1;
+   int side2;
+   int side3;   
+   double perimeter;        
+   double halfperimter;       
+   double area;     
+ 
+    
+    System.out.println("Input side 1.");
+    side1 = console.nextInt();
+	if (side1 <= 0)
+	{
+	   System.out.println("Please input a number greater than zero.");
+	   side1 = console.nextInt();
+	}
+     
+    System.out.println("Input side 2.");
+    side2 = console.nextInt();
+	if (side2 <= 0)
+	{
+	   System.out.println("Please input a number greater than zero.");
+	   side2 = console.nextInt();
+	}
+     
+    System.out.println("Input side 3.");
+    side3 = console.nextInt();
+	if (side3 <= 0)
+	{
+	   System.out.println("Please input a number greater than zero.");
+	   side3 = console.nextInt();
+	}
+     
+    perimeter = side1+side2    +        side3;
+     
+    halfperimter = perimeter/2;
+     
+    area = Math.sqrt(halfperimter * (halfperimter - side1) * (halfperimter - side2) * (halfperimter - side3));
+     
+    System.out.println(" The area of your triangle is " + area);
+    
+	}
+}
